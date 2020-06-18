@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- lien symbolique vers ma feuille de style -->
+    <link href="./assets/styles/stylesheet.css" rel="stylesheet" type="text/css">
+
+    <!-- lien symbolique vers la typographie GoogleFont -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <title>Les formulaires !</title>
+</head>
+
+<body>
+    <a id="haut"></a>
+ 
+        <div class="content">
+            <h1 style="text-align: center;">Les Formulaires, youpi !</h1>
+            
+            <div class="center-div" style="width: 20rem;">
+                <hr>
+            </div>
+
+            <section>
+                <h2 style="text-align: center;">Contactez moi :</h2>
+
+                <form action="contact.php" method="post"> 
+                    <div class="contact">
+
+                        <div class="form-group">
+                            <label for="cntc-fname">Votre petit prénom :</label>
+                            <input type="text" id="cntc-fname" name="cntc-fname" placeholder="Nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="cntc-lname">Votre nom :</label>
+                            <input type="text" id="cntc-lname" name="cntc-lname" placeholder="Prénom">
+                        </div>
+                        <div class="form-group">
+                            <label for="cntc-mail">e-mail :</label>
+                            <input type="email" id="cntc-mail" name="cntc-mail" placeholder="Mail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cntc-msg">Votre doux message :</label>
+                            <textarea id="cntc-msg" name="cntc-msg" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="cntc-type">Objet..</label>
+                            <select id="cntc-type" name="cntc-type">
+                                <option value="">Je recherche... </option>
+                                <option value="unicorn">une licorne</option>
+                                <option value="intership">une formation</option>
+                                <option value="cdi">un CDI<option>
+                            </select>
+                        </div>
+
+                        <div class="button form-group">
+                            <button class="form-red" type="reset" value="Annuler">Annuler</button>
+                            <button class="form-red" onclick="myFunction()" type="submit" value="Envoyé">Envoyé !</button>
+                        </div>
+
+                    </div>
+                </form>
+            </section>
+
+            <div class="center-div" style="width: 20rem;">
+                <hr>
+            </div>
+        
+            <section>
+                <h2 style="text-align: center;">Identification :</h2>
+
+                <form action="login.php" method="post"> 
+                    <div class="login">
+
+                        <div class="form-group">
+                            <label for="log-mail">Votre identifiant :</label>
+                            <input type="email" id="log-mail" name="log-mail" placeholder="Saisissez votre mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="log-pwd">Votre mot de passe :</label>
+                            <input type="password" id="log-pwd" name="log-pwd" placeholder="Saisissez votre mot de">
+                        </div>
+                        
+                        <div class="button form-group">
+                            <button class="form-blue" type="reset" value="Annuler">Annuler</button>
+                            <button class="form-blue" onclick="myFunction()" type="submit" value="Envoyé">Envoyé !</button>
+                        </div>
+                    
+                    </div>
+                </form>
+            </section>
+
+            <div class="center-div" style="width: 20rem;">
+                <hr>
+            </div>
+        
+            <section>
+                <h2 style="text-align: center;">Création de compte :</h2>
+
+                <form action="signin.php" method="post"> 
+                    <div class="signin">
+
+                        <div class="form-group">
+                            <label for="signin-fname">Votre petit prénom :</label>
+                            <input type="text" id="signin-fname" name="signin-fname" placeholder="Nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="signin-lname">Votre nom :</label>
+                            <input type="text" id="signin-lname" name="signin-lname" placeholder="Prénom">
+                        </div>
+                        <div class="form-group">
+                            <label for="signin-type">Vous êtes..</label>
+                            <select id="signin-type" name="signin-type">
+                                <option value="">Une licorne</option>
+                                <option value="men">Homme</option>
+                                <option value="women">Femme</option>
+                                <option value="other">Autre..<option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="signin-birthday">Votre anniversaire :</label>
+                            <input type="date" id="signin-birthday" name="signin-birthday" value="1990-01-01" min="1920-01-01" max="2020-01-01">
+                        </div>
+                        <div class="form-group">
+                            <label for="signin-mail">e-mail :</label>
+                            <input type="email" id="signin-mail" name="signin-mail" placeholder="Mail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signin-pwd">Mot de passe :</label>
+                            <input type="password" id="signin-pwd" name="signin-pwd" placeholder="Mot de passe" required>
+                        </div>               
+
+                        <div class="button form-group">
+                            <button class="form-yellow" type="reset" value="Annuler">Annuler</button>
+                            <button class="form-yellow" onclick="myFunction()" type="submit" value="Envoyé">Envoyé !</button>
+                        </div> 
+
+                    </div>            
+                </form>       
+            </section>
+
+            <!-- ancre de retour haut de page -->
+            <a href="#haut"><img src="./assets/images/arrow.jpg" width="50px" id="arrow"/></a>
+
+        </div>
+    
+    
+    <!-- script JS alertbox -->
+    <script type="text/javascript">
+        function myFunction() {
+            alert("que c'est envoyé même si il n'y a pas encore de base ! ;)");
+          }
+    </script>
+
+</body>
+</html>

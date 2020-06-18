@@ -1,0 +1,128 @@
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+input[type=text], [type=email], [type=password],  [type=date], select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+button {
+    display: inline;
+}
+
+button[type=submit] {
+  width: 45%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0 5px 45px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.center-div {
+  padding-top: 60px;
+  margin: 0 auto;
+  width: 100px; 
+}
+
+div.contact {
+  border-radius: 5px;
+  padding: 20px;
+  height: 500px;
+  width: 500px;
+  content: center;
+  background-color: #fcd8d8;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100; 
+}
+
+button.form-red[type=reset] {
+  width: 45%;
+  background-color: #e24848;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.form-red[type=reset]:hover {
+  background-color: #cf2929;
+  display: inline;   
+}
+
+div.login {
+  border-radius: 5px;
+  padding: 20px;
+  height: 250px;
+  width: 500px;
+  content: center;
+  background-color: #ccedf7;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100; 
+}
+
+button.form-blue[type=reset] {
+  width: 45%;
+  background-color: #48aae2;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.form-blue[type=reset]:hover {
+  background-color: #457ce2;
+  display: inline; 
+}
+
+div.signin {
+  border-radius: 5px;
+  padding: 20px;
+  height: 550px;
+  width: 500px;
+  content: center;
+  background-color: #fff7b0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100; 
+}
+
+button.form-yellow[type=reset] {
+  width: 45%;
+  background-color: #ecd610;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.form-yellow[type=reset]:hover {
+  background-color: #d3b716;
+  display: inline; 
+}
+
+#arrow {
+  position: fixed;
+  right: 20rem;
+  bottom: 3rem;
+}
